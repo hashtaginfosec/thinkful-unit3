@@ -52,7 +52,7 @@ def main():
 
     for language_name, number_of_bytes in sorted_language_totals:
         percentage = 100.0 * number_of_bytes / total_bytes
-        print("{}: {:.2f}%".format(language_name, percentage))
+        print "{}: {:.2f}%".format(language_name, percentage)
 
 
 if __name__ == "__main__":
