@@ -1,5 +1,10 @@
+import authorizaiton
+
+
 def main():
     #main function
+    authorization.authorize
+
     pass
 
 
