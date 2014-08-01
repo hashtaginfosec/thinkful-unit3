@@ -1,11 +1,14 @@
-import authorizaiton
+import authorization
+import requests
+from urls import *
 
 
 def main():
-    #main function
-    authorization.authorize
+    """ Main function """
+    auth = authorization.authorize()
 
-    pass
+    response = requests.get(TIMELINE_URL, auth=auth)
+    print(response.json())
 
 
 if __name__ == "__main__":
